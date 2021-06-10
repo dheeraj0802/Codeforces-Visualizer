@@ -1,0 +1,136 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Itim', cursive;
+    background-color: seagreen;
+}
+#navbar{
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    font-weight: bold;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid white;
+    font-size: 23px;
+}
+.title1{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+#nav-links ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+#nav-links li{
+    list-style: none;
+}
+#nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    margin: 8px;
+    display: block;
+}
+#navbar ul a:hover{
+    background-color: white;
+}
+.current{
+    background-color: white;
+}
+/* responsive-nav */
+#toggle-bar{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background-color: darkcyan;
+    width: 32px;
+    height: 33px;
+    display: none;
+    margin-right: 18px;
+}
+.btn{
+    background-color: white;
+    display: flex;
+    width: 32px;
+    height: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+
+.contests{
+    padding: 10px;
+    background-color: rgb(44, 44, 44);
+    color: rgb(0, 89, 255);
+    border-radius: 8px;
+    margin: 10px;
+}
+.content{
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    text-align: left;
+}
+#main{
+    padding-top: 60px;
+}
+#main a{
+    text-decoration: none;
+    color: rgb(0, 89, 255);
+}
+
+
+.title{
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 10px;
+}
+#u{
+    display: none;
+}
+
+
+@media only screen and (max-width: 650px){
+    #toggle-bar{
+        display: block;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nav-links{
+        background-color: seagreen;
+        display: none;
+        width: 100%;
+    }
+    #nav-links ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav-links ul li a{
+        color: black;
+        padding:2px;
+    }
+    #nav-links li{
+        text-align: center;
+    }
+    #nav-links{
+        width: 100%;
+    }
+    #nav-links.active{
+        display: flex;
+    }
+}

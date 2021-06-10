@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces Visualizer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    
+    <div id="navbar">
+        <div class="title1">
+            Codeforces Visulizer
+        </div>
+            <a href="#" id="toggle-bar">
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </a>
+            <div id="nav-links">
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="index2.html">Contests</a></li>
+                    
+                </ul>
+            </div>
+    </div>
+    
+    <div id="searchbar">
+        <input type="text" id="inputvalue">
+        <button type="submit" id="search">Search the handle</button>
+    </div>
+
+    <div id="main">
+        <div id="content">
+            <div class="con" id="info1">
+            </div>
+            <div class="con" id="info2">
+            </div>
+        </div>
+    </div>
+    
+    <div id="ques-cont">
+        <div class="title">Unsolved Problems</div>
+        <hr>
+        <div id="ques">
+        </div>
+    </div>
+
+    <div id="graph">
+        
+    </div>
+</body>
+<script src="Home.js"></script>
+</html>
